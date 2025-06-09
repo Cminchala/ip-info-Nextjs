@@ -30,7 +30,7 @@ export default function Home() {
 
   useEffect(() => {
     const fetchIpInfo = async () => {
-      const query = await fetch('https://freeipapi.com/api/json/' + ip);
+      const query = await fetch('https://freeipapi.com/api/json/');
       const data = await query.json();
       console.log(data);
       setIpinfo(data);
